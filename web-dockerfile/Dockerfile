@@ -2,6 +2,6 @@ FROM nginx:alpine
 
 RUN apk update
 
-COPY index.html /usr/share/nginx/html
+COPY web-dockerfile/index.html /usr/share/nginx/html
 
 
