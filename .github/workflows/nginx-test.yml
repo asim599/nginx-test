@@ -34,6 +34,6 @@ jobs:
         tags: asim599/custom-nginx
     - name: deploy on server
       run: |
-        ssh ${{ secrets.SSH_USER }}@${{ secret.SSH_HOST }} -p ${{ secret.SSH_PORT }}
+        ssh ${{ secret.SSH_USER }}@${{ secret.SSH_HOST }} -p ${{ secret.SSH_PORT }}
         mkdir /asim-github
         echo "ssh successful"
