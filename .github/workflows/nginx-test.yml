@@ -34,6 +34,6 @@ jobs:
         tags: asim599/custom-nginx
     - name: deploy on server
       run: |
-        ssh -T ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} -p ${{ secrets.SSH_PORT }}
+        ssh root@103.83.89.237 -p 8010
         mkdir /asim-github
         echo "ssh successful"
